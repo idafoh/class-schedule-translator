@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: dauletbaev/class-schedule-translator@v1.0
+      - uses: dauletbaev/class-schedule-translator@v1.1
         id: translator
         with:
           calendar_url: ${{ secrets.NEPTUN_CALENDAR_URL }}
