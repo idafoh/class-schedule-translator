@@ -27,7 +27,7 @@ jobs:
           server_url="${{ secrets.SERVER_ENDPOINT }}"
           
           # Send the POST request with curl
-          response=$(curl -X POST -d "$result" -H "Content-Type: text/plain" "$server_url")
+          response=$(curl -X POST -d "{ data: $result }" -H "Content-Type: application/json" "$server_url")
           
           # Print the response from the server
           echo "Response from server: $response"
