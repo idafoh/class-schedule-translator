@@ -1,0 +1,22 @@
+name: 'Translate calendar summary'
+description: 'Translates the calendar file (.ics) from Hungarian to English'
+inputs:
+  calendar_url:
+    description: 'Web calendar url points to .ics file'
+    required: true
+  google_cloud_project_id:
+    description: 'Google clould project ID'
+    required: true
+  google_cloud_api_key:
+    description: 'Google clould API key'
+    required: true
+  target_language:
+    description: 'Language code that event summaries should be translated'
+    required: false
+    default: 'en-US'
+outputs:
+  result:
+    description: 'Outputs translated .ics file contents as string'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

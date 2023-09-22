@@ -1,0 +1,23 @@
+{
+  "name": "class-schedule",
+  "private": false,
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "prepare": "ncc build main.js -o dist --source-map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^8.0.2",
+    "dotenv": "^16.3.1",
+    "ics": "^3.5.0",
+    "node-ical": "^0.16.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.0"
+  }
+}
